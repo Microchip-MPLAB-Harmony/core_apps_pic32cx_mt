@@ -133,8 +133,8 @@ void TASK4_Tasks ( void )
         status = true;
     }
     
-    PIO_PinInterruptCallbackRegister(PIO_PIN_PA15, SwitchPress_Handler, (uintptr_t)NULL);
-    PIO_PinInterruptEnable(PIO_PIN_PA15);
+    PIO_PinInterruptCallbackRegister(USER_SWITCH, SwitchPress_Handler, (uintptr_t)NULL);
+    PIO_PinInterruptEnable(USER_SWITCH);
 
     while (status == true)
     {
