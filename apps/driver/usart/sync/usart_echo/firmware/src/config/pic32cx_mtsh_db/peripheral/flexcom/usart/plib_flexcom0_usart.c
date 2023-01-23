@@ -91,6 +91,7 @@ void static FLEXCOM0_USART_ErrorClear( void )
     return;
 }
 
+
 void static FLEXCOM0_USART_ISR_RX_Handler( void )
 {
     uint32_t rxPending = 0;
@@ -196,7 +197,9 @@ void FLEXCOM0_InterruptHandler( void )
 {
     /* Channel status */
     uint32_t channelStatus = FLEXCOM0_REGS->FLEX_US_CSR;
+
     uint32_t interruptMask = FLEXCOM0_REGS->FLEX_US_IMR;
+
 
     /* Error status */
     uint32_t errorStatus = (channelStatus & (FLEX_US_CSR_OVRE_Msk | FLEX_US_CSR_FRAME_Msk | FLEX_US_CSR_PARE_Msk));
@@ -224,13 +227,21 @@ void FLEXCOM0_InterruptHandler( void )
         }
     }
 
+    /* Receiver status */
+    if(channelStatus & FLEX_US_CSR_RXRDY_Msk)
+    {
+        FLEXCOM0_USART_ISR_RX_Handler();
+    }
+
 
     /* Clear the FIFO related interrupt flags */
     FLEXCOM0_REGS->FLEX_US_CR = FLEX_US_CR_RSTSTA_Msk;
 
-    FLEXCOM0_USART_ISR_RX_Handler();
-
-    FLEXCOM0_USART_ISR_TX_Handler();
+    /* Transmitter status */
+    if(channelStatus & FLEX_US_CSR_TXRDY_Msk)
+    {
+        FLEXCOM0_USART_ISR_TX_Handler();
+    }
 
 }
 
@@ -391,6 +402,7 @@ bool FLEXCOM0_USART_Read( void *buffer, const size_t size )
             status = true;
 
 
+
             /* Clear RX FIFO */
             FLEXCOM0_REGS->FLEX_US_CR = FLEX_US_CR_RXFCLR_Msk;
 
@@ -408,6 +420,7 @@ bool FLEXCOM0_USART_Read( void *buffer, const size_t size )
 
             /* Enable RX FIFO Threshold interrupt */
             FLEXCOM0_REGS->FLEX_US_FIER = FLEX_US_FIER_RXFTHF_Msk;
+
 
         }
     }
@@ -430,6 +443,7 @@ bool FLEXCOM0_USART_Write( void *buffer, const size_t size )
             flexcom0UsartObj.txProcessedSize = 0;
             flexcom0UsartObj.txBusyStatus = true;
             status = true;
+
 
             /* Initiate the transfer by sending first byte */
             while( (FLEXCOM0_REGS->FLEX_US_CSR & FLEX_US_CSR_TXRDY_Msk) && (flexcom0UsartObj.txProcessedSize < flexcom0UsartObj.txSize) )
