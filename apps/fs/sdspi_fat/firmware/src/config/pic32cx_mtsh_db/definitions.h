@@ -54,6 +54,7 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "driver/sdspi/drv_sdspi.h"
 #include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/flexcom/spi/master/plib_flexcom1_spi_master.h"
