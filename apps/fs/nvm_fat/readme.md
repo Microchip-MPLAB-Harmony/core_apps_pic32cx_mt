@@ -78,7 +78,7 @@ Refer to the following table for LED and Switch name:
 
 | Board | LED Name | Switch Name |
 | ----- | -------- | ----------- |
-| [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)  | D24 |
-| [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A)  | D3 |
-| [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools)  | D20 |
+| [PIC32CXMTC-Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A)  | D24 | Scroll Down |
+| [PIC32CXMTG-Development Board](https://www.microchip.com/en-us/development-tool/EV11K09A)  | D3 | USER SW |
+| [PIC32CXMTSH-Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB#Related%20Tools)  | D20 | Scroll Down |
 |||

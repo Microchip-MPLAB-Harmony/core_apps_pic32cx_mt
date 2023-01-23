@@ -51,15 +51,11 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
     - [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
 
-- The A2 address line of TWI must be soldered to GND. This is done to modify the address of the the EEPROM on IO1 Xplained Pro Extension Kit. The modification changes the address of the temperature sensor to 0x4B and the EEPROM to 0x50
-
-    ![output](images/io1_xplained_address_sel.png)
-
 ### Setting up [PIC32CXMTSH-Development Board]()
 
 - Connect the [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the Xplained pro header of the [PIC32CXMTSH-Development Board]()
 
-- Verify the R115, R118 Pull-up resistors should be mounted with 1KΩ value.
+- Verify the R115, R118 Pull-up resistors should be mounted with 1KΩ value on [PIC32CXMTSH-Development Board]()
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 

@@ -28,6 +28,8 @@
 // *****************************************************************************
 
 #include "task2.h"
+#include "definitions.h"
+#include <string.h>
 
 // *****************************************************************************
 // *****************************************************************************
@@ -51,6 +53,7 @@
 */
 
 TASK2_DATA task2Data;
+extern SemaphoreHandle_t uartMutexLock;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -109,39 +112,26 @@ void TASK2_Initialize ( void )
 
 void TASK2_Tasks ( void )
 {
-
-    /* Check the application's current state. */
-    switch ( task2Data.state )
-    {
-        /* Application's initial state. */
-        case TASK2_STATE_INIT:
-        {
-            bool appInitialized = true;
-
-
-            if (appInitialized)
-            {
-
-                task2Data.state = TASK2_STATE_SERVICE_TASKS;
-            }
-            break;
-        }
-
-        case TASK2_STATE_SERVICE_TASKS:
-        {
-
-            break;
-        }
-
-        /* TODO: implement your application state machine.*/
-
-
-        /* The default state should never be executed. */
-        default:
-        {
-            /* TODO: Handle error in application's state machine. */
-            break;
-        }
+    TickType_t timeNow;
+    
+    while (1)
+    {        
+        /* Task2 is running (<-) now */
+        xSemaphoreTake(uartMutexLock, portMAX_DELAY);        
+        FLEXCOM0_USART_Write((uint8_t*)"           Tsk2-P2 <-\r\n", 23);
+        xSemaphoreGive(uartMutexLock); 
+        
+        /* Work done by task2 for 10 ticks */
+        timeNow = xTaskGetTickCount();
+        while ((xTaskGetTickCount() - timeNow) < 10);
+        
+        /* Task2 is exiting (->) now */
+        xSemaphoreTake(uartMutexLock, portMAX_DELAY);        
+        FLEXCOM0_USART_Write((uint8_t*)"           Tsk2-P2 ->\r\n", 23);
+        xSemaphoreGive(uartMutexLock);   
+        
+        /* Run the task again after 250 msec */
+        vTaskDelay(250 / portTICK_PERIOD_MS );        
     }
 }
 

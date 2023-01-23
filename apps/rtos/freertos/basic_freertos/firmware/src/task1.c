@@ -28,6 +28,8 @@
 // *****************************************************************************
 
 #include "task1.h"
+#include "definitions.h"
+#include <string.h>
 
 // *****************************************************************************
 // *****************************************************************************
@@ -51,6 +53,9 @@
 */
 
 TASK1_DATA task1Data;
+
+/* Mutex used to protect the shared resource - UART */
+SemaphoreHandle_t uartMutexLock;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -91,11 +96,15 @@ void TASK1_Initialize ( void )
     /* Place the App state machine in its initial state. */
     task1Data.state = TASK1_STATE_INIT;
 
+    /* Create a mutex type semaphore. */
+    uartMutexLock = xSemaphoreCreateMutex();
 
-
-    /* TODO: Initialize your application's state machine and other
-     * parameters.
-     */
+    if( uartMutexLock == NULL)
+    {
+        /* There was insufficient FreeRTOS heap available for the semaphore to
+        be created successfully. */
+        FLEXCOM0_USART_Write((uint8_t*)"Could not create mutex lock\r\n", strlen("Could not create mutex lock\r\n"));
+    }
 }
 
 
@@ -110,38 +119,26 @@ void TASK1_Initialize ( void )
 void TASK1_Tasks ( void )
 {
 
-    /* Check the application's current state. */
-    switch ( task1Data.state )
+    TickType_t timeNow;
+
+    while (1)
     {
-        /* Application's initial state. */
-        case TASK1_STATE_INIT:
-        {
-            bool appInitialized = true;
+        /* Task1 is running (<-) now */
+        xSemaphoreTake(uartMutexLock, portMAX_DELAY);
+        FLEXCOM0_USART_Write((uint8_t*)"Tsk1-P1 <-\r\n", 12);
+        xSemaphoreGive(uartMutexLock);
 
+        /* Work done by task1 for 100 ticks */
+        timeNow = xTaskGetTickCount();
+        while ((xTaskGetTickCount() - timeNow) < 100);
 
-            if (appInitialized)
-            {
+        /* Task1 is exiting (->) now */
+        xSemaphoreTake(uartMutexLock, portMAX_DELAY);
+        FLEXCOM0_USART_Write((uint8_t*)"Tsk1-P1 ->\r\n", 12);
+        xSemaphoreGive(uartMutexLock);
 
-                task1Data.state = TASK1_STATE_SERVICE_TASKS;
-            }
-            break;
-        }
-
-        case TASK1_STATE_SERVICE_TASKS:
-        {
-
-            break;
-        }
-
-        /* TODO: implement your application state machine.*/
-
-
-        /* The default state should never be executed. */
-        default:
-        {
-            /* TODO: Handle error in application's state machine. */
-            break;
-        }
+        /* Let idle task run for some time*/
+        vTaskDelay(10 / portTICK_PERIOD_MS );
     }
 }
 

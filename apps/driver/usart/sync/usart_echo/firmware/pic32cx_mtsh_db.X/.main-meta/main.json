@@ -1,0 +1,81 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cx_mt_driver_usart_sync_usart_echo_pic32cx_mtsh_db",
+		"version": "3.0.0",
+		"displayName": "USART Driver Synchronous - Usart echo Example for PIC32CXMTSH Family",
+		"projectName": "sync_usart_echo_pic32cx_mtsh_db",
+		"shortDescription": "This example application demonstrates the synchronous mode of the USART driver by echoing the received characters",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.21.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-MT_DFP",
+			"semverRange": "^1.0.6"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CX2051MTSH128",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CXMTSH-Development Board"
+			],
+			[
+				"Harmony",
+				"Drivers",
+				"USART"
+			],
+			[
+				"Peripherals",
+				"USART"
+			]
+		],
+		"peripherals": [
+			"USART"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"PIC32CX2051MTSH128",
+			"PIC32CXMTSH Family",
+			"UART",
+			"Serial Communication",
+			"USART",
+			"SERCOM",
+			"FLEXCOM"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
