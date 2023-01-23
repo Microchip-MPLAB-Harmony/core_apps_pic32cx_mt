@@ -1,7 +1,7 @@
 /*
  * Component description for PWM
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-29T12:44:45Z */
+/* file generated from device description version 2023-01-20T11:01:01Z */
 #ifndef _PIC32CXMTG_PWM_COMPONENT_H_
 #define _PIC32CXMTG_PWM_COMPONENT_H_
 
