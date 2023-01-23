@@ -47,6 +47,7 @@ It allows user to Program, Erase and lock the on-chip FLASH memory.
 
 static uint32_t sefc_status = 0;
 
+static SEFC_OBJECT sefc;
 
 void SEFC0_Initialize(void)
 {
@@ -72,6 +73,7 @@ bool SEFC0_SectorErase( uint32_t address )
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 
     return true;
 }
@@ -110,6 +112,7 @@ bool SEFC0_PageBufferCommit( const uint32_t address)
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 
     return true;
 }
@@ -135,6 +138,7 @@ bool SEFC0_PageWrite( uint32_t *data, uint32_t address )
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 
     return true;
 }
@@ -156,6 +160,7 @@ bool SEFC0_QuadWordWrite( uint32_t *data, uint32_t address )
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 
     return true;
 }
@@ -170,6 +175,7 @@ void SEFC0_RegionLock(uint32_t address)
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 }
 
 void SEFC0_RegionUnlock(uint32_t address)
@@ -182,6 +188,7 @@ void SEFC0_RegionUnlock(uint32_t address)
 
     sefc_status = 0;
 
+    SEFC0_REGS->SEFC_EEFC_FMR |= SEFC_EEFC_FMR_FRDY_Msk;
 }
 
 bool SEFC0_IsBusy(void)
@@ -196,4 +203,18 @@ SEFC_ERROR SEFC0_ErrorGet( void )
     return (SEFC_ERROR)sefc_status;
 }
 
+void SEFC0_CallbackRegister( SEFC_CALLBACK callback, uintptr_t context )
+{
+    sefc.callback = callback;
+    sefc.context = context;
+}
 
+void SEFC0_InterruptHandler( void )
+{
+    uint32_t ul_fmr = SEFC0_REGS->SEFC_EEFC_FMR;
+    SEFC0_REGS->SEFC_EEFC_FMR = ( ul_fmr & (~SEFC_EEFC_FMR_FRDY_Msk));
+    if(sefc.callback != NULL)
+    {
+        sefc.callback(sefc.context);
+    }
+}

@@ -48,7 +48,6 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "driver/memory/drv_memory_sefc0.h"
 #include "bsp/bsp.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
@@ -62,13 +61,14 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "driver/memory/drv_memory.h"
 #include "peripheral/sefc/plib_sefc0.h"
+#include "peripheral/sefc/plib_sefc1.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "peripheral/sefc/plib_sefc1.h"
 #include "app.h"
 
 

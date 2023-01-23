@@ -61,6 +61,10 @@ static const uint32_t PIO_INDEX[PIO_PORT_MAX] = { 0U, 1U, 2U, 0U };
 */
 void PIO_Initialize ( void )
 {
+ /* Port A Peripheral function GPIO configuration */
+   PIOA_REGS->PIO_MSKR = 0xc000U;
+   PIOA_REGS->PIO_CFGR = 0x0U;
+
  /* Port A Pin 14 configuration */
    PIOA_REGS->PIO_MSKR = 0x4000U;
    PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x200U;
@@ -69,8 +73,14 @@ void PIO_Initialize ( void )
    PIOA_REGS->PIO_MSKR = 0x8000U;
    PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x200U;
 
+ /* Port A Latch configuration */
+   PIOA_REGS->PIO_CODR = 0xc000U;
 
 
+
+ /* Port D Peripheral function GPIO configuration */
+   PIOD_REGS->PIO_MSKR = 0x60000U;
+   PIOD_REGS->PIO_CFGR = 0x0U;
 
  /* Port D Pin 17 configuration */
    PIOD_REGS->PIO_MSKR = 0x20000U;
@@ -80,6 +90,8 @@ void PIO_Initialize ( void )
    PIOD_REGS->PIO_MSKR = 0x40000U;
    PIOD_REGS->PIO_CFGR = (PIOD_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
 
+ /* Port D Latch configuration */
+   PIOD_REGS->PIO_CODR = 0x60000U;
 
 
 

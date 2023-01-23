@@ -86,6 +86,7 @@ void SEFC0_RegionLock(uint32_t address);
 
 void SEFC0_RegionUnlock(uint32_t address);
 
+void SEFC0_CallbackRegister( SEFC_CALLBACK callback, uintptr_t context );
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
