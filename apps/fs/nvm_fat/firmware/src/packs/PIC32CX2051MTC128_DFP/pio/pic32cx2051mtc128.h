@@ -1,7 +1,7 @@
 /*
  * Peripheral I/O description for PIC32CX2051MTC128
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-29T12:44:07Z */
+/* file generated from device description version 2023-01-20T11:00:54Z */
 #ifndef _PIC32CX2051MTC128_GPIO_H_
 #define _PIC32CX2051MTC128_GPIO_H_
 
