@@ -28,10 +28,6 @@
 // *****************************************************************************
 
 #include "task3.h"
-#include "definitions.h"
-#include "portmacro.h"
-#include <string.h>
-
 
 // *****************************************************************************
 // *****************************************************************************
@@ -55,30 +51,16 @@
 */
 
 TASK3_DATA task3Data;
-static SemaphoreHandle_t dataRxSemaphore;
-extern SemaphoreHandle_t uartMutexLock;
-
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
 // *****************************************************************************
 // *****************************************************************************
-void uartReadEventHandler(FLEXCOM_USART_EVENT event, uintptr_t context )
-{
-    if (event == FLEXCOM_USART_EVENT_READ_THRESHOLD_REACHED)
-    {
-        BaseType_t xHigherPriorityTaskWoken;
 
-        /* Unblock the task by releasing the semaphore. */
-        xSemaphoreGiveFromISR( dataRxSemaphore, &xHigherPriorityTaskWoken );
+/* TODO:  Add any necessary callback functions.
+*/
 
-        /* If xHigherPriorityTaskWoken was set to true you
-        we should yield */
-
-        portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
-    }
-}
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Local Functions
@@ -127,48 +109,38 @@ void TASK3_Initialize ( void )
 
 void TASK3_Tasks ( void )
 {
-    uint8_t readByte;
-    bool status = false;
-    TickType_t timeNow;
 
-    FLEXCOM0_USART_ReadCallbackRegister(uartReadEventHandler, 0);
-    FLEXCOM0_USART_ReadThresholdSet(1);
-    FLEXCOM0_USART_ReadNotificationEnable(true, false);
-
-    dataRxSemaphore = xSemaphoreCreateBinary();
-
-    if (dataRxSemaphore != NULL)
+    /* Check the application's current state. */
+    switch ( task3Data.state )
     {
-        status = true;
-    }
-
-    while (status == true)
-    {
-        /* Block until a character is received on the terminal */
-        if( xSemaphoreTake( dataRxSemaphore, portMAX_DELAY ) == pdTRUE )
+        /* Application's initial state. */
+        case TASK3_STATE_INIT:
         {
-            /* Task3 is running (<-) now */
-            xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            FLEXCOM0_USART_Write((uint8_t*)"                      Tsk3-P3 <-\r\n", 34);
-            xSemaphoreGive(uartMutexLock);
+            bool appInitialized = true;
 
-            /* Toggle an LED if character received is 'L' or 'l' */
-            while (FLEXCOM0_USART_Read(&readByte, 1) == true)
+
+            if (appInitialized)
             {
-                if (readByte == 'L' || readByte == 'l')
-                {
-                    LED_IR_Toggle();
-                }
+
+                task3Data.state = TASK3_STATE_SERVICE_TASKS;
             }
+            break;
+        }
 
-            /* Work done by task3 for 50 ticks */
-            timeNow = xTaskGetTickCount();
-            while ((xTaskGetTickCount() - timeNow) < 50);
+        case TASK3_STATE_SERVICE_TASKS:
+        {
 
-            /* Task3 is exiting (->) now */
-            xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            FLEXCOM0_USART_Write((uint8_t*)"                      Tsk3-P3 ->\r\n", 34);
-            xSemaphoreGive(uartMutexLock);
+            break;
+        }
+
+        /* TODO: implement your application state machine.*/
+
+
+        /* The default state should never be executed. */
+        default:
+        {
+            /* TODO: Handle error in application's state machine. */
+            break;
         }
     }
 }

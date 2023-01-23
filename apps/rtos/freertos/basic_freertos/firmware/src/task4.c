@@ -28,8 +28,6 @@
 // *****************************************************************************
 
 #include "task4.h"
-#include "definitions.h"
-#include <string.h>
 
 // *****************************************************************************
 // *****************************************************************************
@@ -53,8 +51,6 @@
 */
 
 TASK4_DATA task4Data;
-static SemaphoreHandle_t switchPressSemaphore;
-extern SemaphoreHandle_t uartMutexLock;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -62,18 +58,8 @@ extern SemaphoreHandle_t uartMutexLock;
 // *****************************************************************************
 // *****************************************************************************
 
-static void SwitchPress_Handler(PIO_PIN pin, uintptr_t context)
-{
-    BaseType_t xHigherPriorityTaskWoken;
-
-    /* Unblock the task by releasing the semaphore. */
-    xSemaphoreGiveFromISR( switchPressSemaphore, &xHigherPriorityTaskWoken );
-
-    /* If xHigherPriorityTaskWoken was set to true you
-    we should yield */
-
-    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
-}
+/* TODO:  Add any necessary callback functions.
+*/
 
 // *****************************************************************************
 // *****************************************************************************
@@ -123,37 +109,38 @@ void TASK4_Initialize ( void )
 
 void TASK4_Tasks ( void )
 {
-    bool status = false;
-    TickType_t timeNow;
 
-    switchPressSemaphore = xSemaphoreCreateBinary();
-
-    if (switchPressSemaphore != NULL)
+    /* Check the application's current state. */
+    switch ( task4Data.state )
     {
-        status = true;
-    }
-    
-    PIO_PinInterruptCallbackRegister(USER_SWITCH, SwitchPress_Handler, (uintptr_t)NULL);
-    PIO_PinInterruptEnable(USER_SWITCH);
-
-    while (status == true)
-    {
-        /* Block until user presses the switch */
-        if( xSemaphoreTake( switchPressSemaphore, portMAX_DELAY ) == pdTRUE )
+        /* Application's initial state. */
+        case TASK4_STATE_INIT:
         {
-            /* Task4 is running (<-) now */
-            xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            FLEXCOM0_USART_Write((uint8_t*)"                                Tsk4-P4 <-\r\n", 44);
-            xSemaphoreGive(uartMutexLock);
+            bool appInitialized = true;
 
-            /* Work done by task3 for 10 ticks */
-            timeNow = xTaskGetTickCount();
-            while ((xTaskGetTickCount() - timeNow) < 10);
 
-            /* Task4 is exiting (->) now */
-            xSemaphoreTake(uartMutexLock, portMAX_DELAY);
-            FLEXCOM0_USART_Write((uint8_t*)"                                Tsk4-P4 ->\r\n", 44);
-            xSemaphoreGive(uartMutexLock);
+            if (appInitialized)
+            {
+
+                task4Data.state = TASK4_STATE_SERVICE_TASKS;
+            }
+            break;
+        }
+
+        case TASK4_STATE_SERVICE_TASKS:
+        {
+
+            break;
+        }
+
+        /* TODO: implement your application state machine.*/
+
+
+        /* The default state should never be executed. */
+        default:
+        {
+            /* TODO: Handle error in application's state machine. */
+            break;
         }
     }
 }
