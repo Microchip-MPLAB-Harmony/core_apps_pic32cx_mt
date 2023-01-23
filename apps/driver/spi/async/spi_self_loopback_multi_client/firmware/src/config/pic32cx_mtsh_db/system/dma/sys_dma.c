@@ -1,5 +1,26 @@
 /*******************************************************************************
-* Copyright (C) 2022 Microchip Technology Inc. and its subsidiaries.
+  DMA System Service Library Implementation Source File
+
+  Company
+    Microchip Technology Inc.
+
+  File Name
+    sys_dma.c
+
+  Summary
+    DMA system service library interface implementation.
+
+  Description
+    This file implements the interface to the DMA system service library.
+
+  Remarks:
+    DMA controller initialize will be done from within the MCC.
+
+*******************************************************************************/
+
+// DOM-IGNORE-BEGIN
+/*******************************************************************************
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -20,58 +41,39 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
-
-#ifndef PLIB_CLK_H
-#define PLIB_CLK_H
-
-#include <stddef.h>
-
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    extern "C" {
-
-#endif
+// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: CLK Module System Interface Routines
+// Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
+#include "system/dma/sys_dma.h"
 
-// *****************************************************************************
+//******************************************************************************
 /* Function:
-    void CLK_Initialize ( void )
+    void SYS_DMA_AddressingModeSetup(SYS_DMA_CHANNEL channel, SYS_DMA_SOURCE_ADDRESSING_MODE sourceAddrMode, SYS_DMA_DESTINATION_ADDRESSING_MODE destAddrMode);
 
   Summary:
-    Initializes hardware of the System Clock and Peripheral Clock.
-
-  Description:
-    This function initializes the hardware of System Clock and Peripheral Clocks.
-
-  Precondition:
-    None.
-
-  Parameters:
-    None.
-
-  Returns:
-    None.
-
-  Example:
-    <code>
-    Example 1: Do not alter the configuration bit settings
-    CLK_Initialize ( );
-
-    </code>
+    Setup addressing mode of selected DMA channel.
 
   Remarks:
-    None.
+    Check sys_dma.h for more info.
 */
-
-void CLK_Initialize ( void );
-
-#ifdef __cplusplus
+void SYS_DMA_AddressingModeSetup(SYS_DMA_CHANNEL channel, SYS_DMA_SOURCE_ADDRESSING_MODE sourceAddrMode, SYS_DMA_DESTINATION_ADDRESSING_MODE destAddrMode)
+{
 }
-#endif
 
-#endif //PLIB_CLK_H
+//******************************************************************************
+/* Function:
+    void SYS_DMA_DataWidthSetup(SYS_DMA_CHANNEL channel, SYS_DMA_WIDTH dataWidth);
+
+  Summary:
+    Setup data width of selected DMA channel.
+
+  Remarks:
+    Check sys_dma.h for more info.
+*/
+void SYS_DMA_DataWidthSetup(SYS_DMA_CHANNEL channel, SYS_DMA_WIDTH dataWidth)
+{
+}
