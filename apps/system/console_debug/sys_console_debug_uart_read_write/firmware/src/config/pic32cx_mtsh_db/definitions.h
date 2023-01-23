@@ -55,6 +55,7 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
 #include "peripheral/flexcom/usart/plib_flexcom0_usart.h"
