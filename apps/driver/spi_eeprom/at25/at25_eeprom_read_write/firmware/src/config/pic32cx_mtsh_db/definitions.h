@@ -55,15 +55,16 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pio/plib_pio.h"
+#include "peripheral/supc/plib_supc.h"
 #include "driver/at25/drv_at25.h"
 #include "peripheral/sefc/plib_sefc0.h"
 #include "peripheral/flexcom/spi/master/plib_flexcom1_spi_master.h"
-#include "peripheral/sefc/plib_sefc1.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "peripheral/sefc/plib_sefc1.h"
 #include "app.h"
 
 
