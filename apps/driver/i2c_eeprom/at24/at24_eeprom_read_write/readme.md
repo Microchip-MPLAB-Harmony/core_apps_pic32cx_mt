@@ -28,7 +28,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 ## Setting up the hardware
@@ -37,18 +37,18 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtsh_db.X | [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 - To run the demo, the following additional hardware are required:
     - [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click)
     - [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 
-### Setting up [PIC32CXMTSH-Development Board]()
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Install an [EEPROM 3 click board](https://www.mikroe.com/eeprom-3-click) on to the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 
-- Connect the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) to the Xplained pro header of the [PIC32CXMTSH-Development Board]()
+- Connect the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) to the Xplained pro header of the [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
@@ -62,5 +62,5 @@ Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [PIC32CXMTSH-Development Board]() | D20 |
+|  [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | D20 |
 |||

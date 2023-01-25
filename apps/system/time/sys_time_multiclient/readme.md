@@ -38,7 +38,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
 ## Setting up the hardware
@@ -47,10 +47,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtsh_db.X | [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
-### Setting up [PIC32CXMTSH-Development Board]()
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
@@ -84,5 +84,5 @@ Refer to the following table for LED and Switch name:
 
 | Board | LED Name | Switch Name |
 | ----- | -------- | ----------- |
-|  [PIC32CXMTSH-Development Board]() | D20 | Scroll Down |
+|  [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | D20 | Scroll Down |
 |||

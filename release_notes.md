@@ -16,9 +16,10 @@ Following table provides number of driver and system service application example
 
 | Development Kits  | MPLAB X applications |
 |:-----------------:|:-------------------:|
-| PIC32CXMTSH-Development Board | 10 |
-| PIC32CXMTC-Development Board | 2 |
-| PIC32CXMTG-Development Board | 2
+| [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | 10 |
+| [PIC32CXMTC Development Board](https://www.microchip.com/en-us/development-tool/EV58E84A) | 2 |
+| [PIC32CXMTG Evaluation Kit](https://www.microchip.com/en-us/development-tool/EV11K09A) | 2 |
+
 ### New Features
 
 - None

@@ -40,7 +40,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | MPLABX project for [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 ||
 
 ## Setting up the hardware
@@ -49,10 +49,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cx_mtsh_db.X | [PIC32CXMTSH-Development Board]() |
+| pic32cx_mtsh_db.X | [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) |
 |||
 
-### Setting up [PIC32CXMTSH-Development Board]()
+### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
 - To run the demo, the following additional hardware are required:
   - [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
@@ -72,7 +72,7 @@ The following table shows the target hardware for the application projects.
 
     | Board | LED Name | Switch Name |
     | ----- | -------- | ----------- |
-    |  [PIC32CXMTSH-Development Board]() | D20 | Scroll Down |
+    |  [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB) | D20 | Scroll Down |
     ||||
 
 4. If LED is ON, Insert the SD Card on to your host PC
