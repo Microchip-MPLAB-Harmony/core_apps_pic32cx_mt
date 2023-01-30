@@ -47,7 +47,7 @@
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/sefc/plib_sefc_common.h</itemPath>
             </logicalFolder>
             <logicalFolder name="supc" displayName="supc" projectFiles="true">
-              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.h</itemPath>
+              <itemPath>../src/config/pic32cx_mtc_db/peripheral/supc/plib_supc.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <itemPath>../src/config/pic32cx_mtc_db/toolchain_specifics.h</itemPath>
@@ -268,7 +268,7 @@
               <itemPath>../src/config/pic32cx_mtc_db/peripheral/sefc/plib_sefc1.c</itemPath>
             </logicalFolder>
             <logicalFolder name="supc" displayName="supc" projectFiles="true">
-              <itemPath>../src/config/pic32cx_mtsh_db/peripheral/supc/plib_supc.c</itemPath>
+              <itemPath>../src/config/pic32cx_mtc_db/peripheral/supc/plib_supc.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
