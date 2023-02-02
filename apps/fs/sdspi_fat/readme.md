@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 driver and system service application examples for PIC32CXMTSH family
+parent: Harmony 3 driver and system service application examples for PIC32CX MT family
 title: FAT filesystem using SDSPI media 
 has_children: false
 has_toc: false

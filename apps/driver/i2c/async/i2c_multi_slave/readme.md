@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 driver and system service application examples for PIC32CXMTSH family
+parent: Harmony 3 driver and system service application examples for PIC32CX MT family
 title: I2C driver asynchronous - I2C multi slave 
 has_children: false
 has_toc: false

@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 driver and system service application examples for PIC32CXMTSH family
+parent: Harmony 3 driver and system service application examples for PIC32CX MT family
 title: Console Debug System Service using UART 
 has_children: false
 has_toc: false
