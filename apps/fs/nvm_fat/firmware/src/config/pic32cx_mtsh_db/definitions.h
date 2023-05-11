@@ -65,11 +65,11 @@
 #include "peripheral/supc/plib_supc.h"
 #include "driver/memory/drv_memory.h"
 #include "peripheral/sefc/plib_sefc0.h"
-#include "peripheral/sefc/plib_sefc1.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "peripheral/sefc/plib_sefc1.h"
 #include "app.h"
 
 
@@ -81,6 +81,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CX2051MTSH128"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "PIC32CX_MT"
+#define DEVICE_SERIES		 "PIC32CXMTSH"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000

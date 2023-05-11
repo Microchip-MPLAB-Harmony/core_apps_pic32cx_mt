@@ -40,8 +40,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _DRV_MEMORY_SEFC0_H
-#define _DRV_MEMORY_SEFC0_H
+#ifndef DRV_MEMORY_SEFC0_H
+#define DRV_MEMORY_SEFC0_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -80,7 +80,7 @@ bool DRV_SEFC0_GeometryGet( const DRV_HANDLE handle, MEMORY_DEVICE_GEOMETRY *geo
 }
 #endif
 
-#endif // #ifndef _DRV_MEMORY_SEFC0_H
+#endif // #ifndef DRV_MEMORY_SEFC0_H
 /*******************************************************************************
  End of File
 */
