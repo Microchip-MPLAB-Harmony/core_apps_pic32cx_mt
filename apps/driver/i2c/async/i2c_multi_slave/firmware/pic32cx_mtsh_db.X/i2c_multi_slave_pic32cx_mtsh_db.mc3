@@ -1,4 +1,4 @@
-<config configName="i2c_multi_slave" projectName="i2c_multi_slave_pic32cx_mtsh_db" configVersion="1.1" device="PIC32CX2051MTSH128" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.14">
+<config configName="i2c_multi_slave" projectName="i2c_multi_slave_pic32cx_mtsh_db" configVersion="1.1" device="PIC32CX2051MTSH128" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -63,7 +63,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -2038,7 +2038,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\debug\sys_debug.h</file>
-         <hash>222cdc284bd651e83188b9641cc57c133cf86563dbeb5d5523766d4a36087165</hash>
+         <hash>bc6fa321b0be542d074e4564065b7fd69f52556486ac3d892d315b51c434f9ec</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\sfr.h</file>
@@ -2058,7 +2058,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\tasks.c</file>
-         <hash>e961635a2766959694264d46b3bbd86ee063b6a4fb1d3ee90a93b6c1d4d4c3e1</hash>
+         <hash>e592b8e4d5c93acb1b55267b18514371ff9425dfebff5546c62c19afd66a7067</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sfr.h</file>
@@ -2082,7 +2082,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\clk\plib_clk.c</file>
-         <hash>6f7aae4c8432ac09f716158b44ac0c28c36a96a4f99ed8b8334bbb941df986e7</hash>
+         <hash>8a12c3dada23ddf50125b970db5ee2b717d730bbff88aefba258a75f4b22df43</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sefc.h</file>
@@ -2090,7 +2090,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\definitions.h</file>
-         <hash>f069191bd681c29a58601034f84d3299341a6a43957718449d4d1ca0e09feb9b</hash>
+         <hash>2586ea8678996f335b8cd3aaae3f1f7d8aac2487cd085d4d81311ad7655045d1</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\ipc.h</file>
@@ -2106,11 +2106,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\clk\plib_clk.h</file>
-         <hash>9177df6b8646844c6be93f20ba1e4e23e972c9c38c6c2334c0fc331e4e7e38cb</hash>
+         <hash>49f362cc6b9f602d7d69fdf7694fece0e0d1903dec3a8d19fccb794689170a9a</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\time\sys_time.h</file>
-         <hash>f21b100d8f0b8b79af9217315098d51df855d9015f05a7e25ad77414cd19b2c3</hash>
+         <hash>6357468f7670698b16bfb6439d9919ed38eba99d4f03277a8b43ac34586fa1b3</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\console\src\sys_console_local.h</file>
@@ -2138,7 +2138,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\flexcom\usart\plib_flexcom_usart_local.h</file>
-         <hash>ab93fd45b0e4b8313a701921da099d2bdf35839d7479149fda62987c9773e075</hash>
+         <hash>d7d8e1bab1992fd5471cbee03dfbe206d761d9e622c721c08f3546ef7d335b64</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom4.h</file>
@@ -2150,11 +2150,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\system_common.h</file>
-         <hash>0dbf2f60b29c97426e70187bc59c652ab5a355f51cfbe3f195ff1c8c6c0b1602</hash>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\cache\sys_cache.h</file>
-         <hash>3407ecac4da455d4b8ba70043f10c20b10e1304e92402db824ca5efa6a2f8402</hash>
+         <hash>b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\qspi.h</file>
@@ -2174,11 +2174,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\interrupts.c</file>
-         <hash>14ab847418a5ae324e5501f4f9626c93dae6cf56f5438c0d3c9196e5f41ae7b6</hash>
+         <hash>ef895ace72e7272181fae6839ce801c8553a11b40398f152b8079c516b594721</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\cache\sys_cache.c</file>
-         <hash>7ed94244e15453076a32ec0f0e9d07ee40a74661c3da757c15c568b74f96d1ad</hash>
+         <hash>da28c09b0da0fdd6fb7064631c15c9197c78df33fcd17d742baef909830a320e</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\ipc1.h</file>
@@ -2202,7 +2202,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\configuration.h</file>
-         <hash>45c777ee119476dad09b865ead6d3cfcef2674e7368345ee0968be29446061a4</hash>
+         <hash>9f9ce8ea0fd83efb8d7978ee87f0eda30b21583dea3cc84433905acf65b5b6e9</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\tc.h</file>
@@ -2210,7 +2210,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\console\src\sys_console_uart_definitions.h</file>
-         <hash>0b8c26a32e6ab6cb50039434ed379044bfa539b4ed2ed4b65a281d943a8868d8</hash>
+         <hash>bf403c11673266a5a861fd99253c377030c1a7f9e912eef446101e416b4f8c9a</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\rstc.h</file>
@@ -2230,7 +2230,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\console\src\sys_console_uart.c</file>
-         <hash>ac0304a177b5e152c80d648da5f5cd87f7d926814f093131b76142c41fde6473</hash>
+         <hash>ff3d1854f469e4fc41d96adce6f7ec38afad5d1b076c295eb4777936777673d0</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\emafe.h</file>
@@ -2258,7 +2258,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\int\sys_int.h</file>
-         <hash>71e36331ee689ae305b3d8ec49948e3dde0324b65f51bf38f4472b900a421ed6</hash>
+         <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\sfrbu.h</file>
@@ -2286,7 +2286,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\driver\i2c\drv_i2c.h</file>
-         <hash>1add02b0380f67be5dc9707f01b290af08eccc0957775327f44a8c1afc823410</hash>
+         <hash>098d38bbc9c9d42befb9e601cfaf7f342ce8c670b788c961ef84df6db1ecbf82</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\matrix.h</file>
@@ -2302,11 +2302,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\toolchain_specifics.h</file>
-         <hash>c93f9d68b1623668727be21b4449250a7e4a5d7040776d6f6d604a7528ffc9eb</hash>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\rtt\plib_rtt.c</file>
-         <hash>229c4803b65b9bf8473ed26d8a5173fc2ecdb8c32611bfca0d9d51ccc09705f7</hash>
+         <hash>6c7cdb791c50a1e7038e6b2b2160b2b9eee7e6b7d835b42ccf4eafabe8a2b324</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom3.h</file>
@@ -2338,7 +2338,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\bsp\bsp.h</file>
-         <hash>90a8fa7532f4d90836b2838912759ad2048c5cc9e24906092dae18ba3087d9e2</hash>
+         <hash>559afebba24c844d7d95837ab4eb1af8ae4fbe38c6adb372080e2abfed54a13c</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\pio.h</file>
@@ -2374,7 +2374,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\osal\osal_definitions.h</file>
-         <hash>0a5ca28c4812bb37babfebc1fe30a90b13583504d81910ad159feb746a5b002c</hash>
+         <hash>5f0a2513a093b6d228e2b50646b204923a82047335a47f3d35a2938309ab6f37</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\fuses.h</file>
@@ -2386,11 +2386,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\initialization.c</file>
-         <hash>b906f21fd344d73d541f99bd45a38aaf1fefc8bd1bb48f701a2cc27b35492e1c</hash>
+         <hash>552dcc620020fe957608b6c2adf433f23d2bec6388d0c25f13f0c0e954e5900c</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\flexcom\twi\master\plib_flexcom3_twi_master.c</file>
-         <hash>0c25b8e1124fe6aa7a2ea2a8cad1b692a1f3f5f6a8ec23a70e96843143d7f6be</hash>
+         <hash>ff1916480047461afa79ac4e9a0ab26f10b17c14c1cafe94d120de7270bec92e</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\dwdt.h</file>
@@ -2410,11 +2410,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\flexcom\twi\master\plib_flexcom3_twi_master.h</file>
-         <hash>27a89a969de501cf06451b719acc81a1166fb1f061153ec84523983572bc5641</hash>
+         <hash>053d3a914eef88a2141bfe261420bdd90046d7f03e0a6ee75cbd19d2a3b16f2b</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\system_module.h</file>
-         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
+         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
       </entry>
       <entry>
          <file>..\src\app_i2c_eeprom.c</file>
@@ -2438,11 +2438,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\console\sys_console.h</file>
-         <hash>e8a97986345fb2c80389834b113384eba523837ee43f7798d9b56be630a6e7b3</hash>
+         <hash>cc82ba93f8d69bf31a9dfcfe1e425de3924bcf9e4e4b31f7efad9c2d062dcbf6</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\console\src\sys_console.c</file>
-         <hash>40aa2013385ec344c267d5779ef941d663ecc0739ebe962ad906324e71666c43</hash>
+         <hash>622a27844a650b4fa265c7a4739ba3768a76e4148600be42e44eec2e0673d7c6</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -2466,7 +2466,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\startup_xc32.c</file>
-         <hash>fbb0733681f472bcabed3d19e22a767f652ee857cba2d8608caf99ff1393a9e6</hash>
+         <hash>ef7f14c52d7d65f5b819942dab6f2ae93157d35a40ee248ea4b6e1b4cad4f51f</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\icm.h</file>
@@ -2474,7 +2474,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\sefc\plib_sefc1.c</file>
-         <hash>a7e77f8ea6312760b82b8c0899e9601baa3167cc88a4c7cb69528015c82513f0</hash>
+         <hash>10160ae893fdc4dbcf4b8f76752e74f6562a5845672a5a45cf940f65e15c46ca</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\mem2mem0.h</file>
@@ -2486,7 +2486,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\sefc\plib_sefc1.h</file>
-         <hash>61bdf32c92e454fdb6aaa86f9ba742ef6239e8a1097e4f43288deb5a53f7fa33</hash>
+         <hash>83b92e05b738cfeed963f18fe17bd28c298bc3092af00bb0448676aa58e8151c</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\tc1.h</file>
@@ -2494,7 +2494,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rtc.h</file>
@@ -2518,7 +2518,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\flexcom\usart\plib_flexcom0_usart.c</file>
-         <hash>918d8764c8191fa4979d47b47da767d3fb14a92cc3ab223a91ac0a9c653b3c24</hash>
+         <hash>993a65cc49e69a5caaa93b9d8b619f79e04c15718e91539886a58990f3537045</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\icm.h</file>
@@ -2542,15 +2542,15 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\int\src\sys_int.c</file>
-         <hash>23e798871ce6f7b4b0e0dbd5cb2cad7b43bd2dd1f38152f28d14f5a5b7a2938b</hash>
+         <hash>4281667cc2b84c9e4be1f0dfb3f7d42b77d36c5dcf6513d29ff40262f746cfc6</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\time\sys_time_definitions.h</file>
-         <hash>904195d4340ba6b97cf19c25b9695d2a9f37ed67cf6abdf8ee1ee839506e2801</hash>
+         <hash>46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\int\sys_int_mapping.h</file>
-         <hash>660e7081f93de17660144721849acf269925988a4f6510028d25903aaa866ea1</hash>
+         <hash>5abf8528dabc1b17378f5d137870597037214fddf33880fa40e9263352da3008</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom2.h</file>
@@ -2570,11 +2570,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\exceptions.c</file>
-         <hash>b268111879b5fa0ab2eaf79fc5d4bd1aa046c54d97805246ce08964100a70bfb</hash>
+         <hash>89852728a9a1cc4c9746839cc3caf5308b8698c0c30bf6bfbad0db9e552a387e</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\driver\i2c\src\drv_i2c_local.h</file>
-         <hash>f82fd4270a023c7d3281752352a98a33d139a03992f8cf32e6ad04adaf8fcf5f</hash>
+         <hash>efe3b598a6fc3492f7f448c0077edcce4378d2029b5a26d304e0293e0d4711f7</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\syscwp.h</file>
@@ -2594,7 +2594,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\nvic\plib_nvic.c</file>
-         <hash>3b38de2eccdda2ddb1145737856d8d58a67f7c63b2ddc7aa99dc94429f0d5c9c</hash>
+         <hash>4285137871154b363db229c94c28c993c5c3af3eeec7fadd82290707c1e4d689</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\stdio\xc32_monitor.c</file>
@@ -2638,7 +2638,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\driver\i2c\src\drv_i2c.c</file>
-         <hash>d27c94dc19b7413b120ca9aca2689f5d95e5a2c46f2b3918d37587bf64c85551</hash>
+         <hash>5d5aba18ec8e697a064a2eb4b862f0bb5ae34e68d88e71de23b5b1a9019e90c4</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\matrix2.h</file>
@@ -2654,11 +2654,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\sefc\plib_sefc0.h</file>
-         <hash>893cf8244a3316c1fe83849c56f73fe146066611a437727f75cc9db1c6644896</hash>
+         <hash>35517063851978e25640dfaf6512a6af69907bec245ccd05698bf94afee49581</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\osal\osal_impl_basic.h</file>
-         <hash>0c388837ef1d4e207a028ed31bfe07f1aac7ea8b0505caff58f737667ccbeaee</hash>
+         <hash>67ce72d34fd1e4dee0b6937fa026ab2c7bd285f82a24da09742c68333adaf0fc</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\flexcom\twi\master\plib_flexcom_twi_master_common.h</file>
@@ -2667,6 +2667,10 @@
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rstc.h</file>
          <hash>97dc0fcd88435ae776650c4c72dbbe9001dd9adc75ea5c99bafc36af731457fd</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\i2c_multi_slave\sys_tasks.h</file>
+         <hash>21f254f497a18a024cd00128d06c4776c2643f867a460c1ba9880a7dd41a8d56</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\trng.h</file>
@@ -2682,7 +2686,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\time\src\sys_time_local.h</file>
-         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
+         <hash>df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\slcdc.h</file>
@@ -2690,7 +2694,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\driver\i2c\drv_i2c_definitions.h</file>
-         <hash>73ed094aba8f1de3ae1497ff414474f02588381d94801f6beac411f8c7f9b329</hash>
+         <hash>308393d7dc25f042ea7443ac00d81cc8fafb0eec952207d88f64a0b48ea04bae</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\device.h</file>
@@ -2710,7 +2714,7 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\sefc\plib_sefc_common.h</file>
-         <hash>3422313db812f18644a273ee79e55ca7b2c45980e8f5a56eb3b89df0fc337724</hash>
+         <hash>3e24f63c9dcb1ed3c31964d7718ebdd4e4e012f6a8d1a99b59f1cce1d2158137</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\component\rtt.h</file>
@@ -2722,11 +2726,11 @@
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\system\time\src\sys_time.c</file>
-         <hash>b722ac0c5d955d289bd906609ab6f302342166c5ba66f87b30cac17ac6bfdcd9</hash>
+         <hash>fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271</hash>
       </entry>
       <entry>
          <file>..\src\config\i2c_multi_slave\peripheral\sefc\plib_sefc0.c</file>
-         <hash>64682b80fbffe6e1403ebf5530284dd0a0e1393597cf7c63751f654882bb1544</hash>
+         <hash>2666b2b03017cb9382e2f9224af9a1b1158b5a063163946a0ed60ee62701f571</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX2051MTSH128_DFP\instance\flexcom1.h</file>
