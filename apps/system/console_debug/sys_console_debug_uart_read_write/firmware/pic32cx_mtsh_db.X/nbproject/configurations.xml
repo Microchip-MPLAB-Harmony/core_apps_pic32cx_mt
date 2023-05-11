@@ -295,7 +295,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>pic32cx_mtsh_db.mc3</itemPath>
+      <itemPath>sys_console_debug_uart_read_write_pic32cx_mtsh_db.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
