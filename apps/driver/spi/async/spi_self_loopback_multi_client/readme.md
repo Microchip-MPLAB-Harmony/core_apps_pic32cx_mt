@@ -48,9 +48,7 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 
-- Use jumper wire to Connect "Pin 16 of EXT1 header" to "Pin 17 of EXT1 header"
-  - SPI0 MOSI signal is mapped to PA08 that is routed to "Pin 16 of EXT1 header"
-  - SPI0 MISO signal is mapped to PA09 that is routed to "Pin 17 of EXT1 header"
+- Use jumper wire to Connect Pin 16 (SPI0 MOSI) to Pin 17 (SPI0 MISO) of Xplained pro header of the [PIC32CXMTSH Development Board](https://www.microchip.com/en-us/development-tool/PIC32CXMTSH-DB)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
