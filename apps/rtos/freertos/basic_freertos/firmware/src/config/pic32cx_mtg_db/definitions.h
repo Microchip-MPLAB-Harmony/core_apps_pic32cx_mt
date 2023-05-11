@@ -59,9 +59,8 @@
 #include "task.h"
 #include "peripheral/flexcom/usart/plib_flexcom0_usart.h"
 #include "peripheral/sefc/plib_sefc0.h"
-#include "peripheral/sefc/plib_sefc1.h"
-#include "system/cache/sys_cache.h"
 #include "osal/osal.h"
+#include "peripheral/sefc/plib_sefc1.h"
 #include "task1.h"
 #include "task2.h"
 #include "task3.h"
@@ -76,6 +75,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CX2051MTG128"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "PIC32CX_MT"
+#define DEVICE_SERIES		 "PIC32CXMTG"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000
