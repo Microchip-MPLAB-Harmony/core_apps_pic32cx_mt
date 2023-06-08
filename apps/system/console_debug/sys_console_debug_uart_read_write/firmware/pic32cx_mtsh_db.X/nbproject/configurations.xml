@@ -80,6 +80,7 @@
           <itemPath>../src/config/pic32cx_mtsh_db/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/device_cache.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/configuration.h</itemPath>
+          <itemPath>../src/config/pic32cx_mtsh_db/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -280,6 +281,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>sys_console_debug_uart_read_write_pic32cx_mtsh_db.mc3</itemPath>
+      <itemPath>../src/config/pic32cx_mtsh_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

@@ -55,6 +55,7 @@
           <itemPath>../src/config/pic32cx_mtsh_db/device.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/user.h</itemPath>
+          <itemPath>../src/config/pic32cx_mtsh_db/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="FreeRTOS" displayName="FreeRTOS" projectFiles="true">
@@ -304,6 +305,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>basic_freertos_pic32cx_mtsh_db.mc3</itemPath>
+      <itemPath>../src/config/pic32cx_mtsh_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

@@ -84,6 +84,7 @@
           <itemPath>../src/config/pic32cx_mtsh_db/interrupts.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/configuration.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/definitions.h</itemPath>
+          <itemPath>../src/config/pic32cx_mtsh_db/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -284,6 +285,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>at24_eeprom_read_write_pic32cx_mtsh_db.mc3</itemPath>
+      <itemPath>../src/config/pic32cx_mtsh_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

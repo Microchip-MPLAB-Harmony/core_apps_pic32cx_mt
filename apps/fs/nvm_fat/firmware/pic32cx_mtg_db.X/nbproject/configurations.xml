@@ -87,6 +87,7 @@
           <itemPath>../src/config/pic32cx_mtg_db/configuration.h</itemPath>
           <itemPath>../src/config/pic32cx_mtg_db/user.h</itemPath>
           <itemPath>../src/config/pic32cx_mtg_db/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/pic32cx_mtg_db/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -290,6 +291,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>nvm_fat_pic32cx_mtg_db.mc3</itemPath>
+      <itemPath>../src/config/pic32cx_mtg_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

@@ -90,6 +90,7 @@
           <itemPath>../src/config/pic32cx_mtsh_db/user.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/configuration.h</itemPath>
           <itemPath>../src/config/pic32cx_mtsh_db/device.h</itemPath>
+          <itemPath>../src/config/pic32cx_mtsh_db/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -301,6 +302,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>nvm_fat_pic32cx_mtsh_db.mc3</itemPath>
+      <itemPath>../src/config/pic32cx_mtsh_db/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
