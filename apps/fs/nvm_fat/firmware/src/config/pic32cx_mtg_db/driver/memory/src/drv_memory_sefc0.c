@@ -95,7 +95,7 @@ bool DRV_SEFC0_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t addre
 
 bool DRV_SEFC0_SectorErase( const DRV_HANDLE handle, uint32_t address )
 {
-    return (SEFC0_SectorErase(address));
+    return (SEFC0_PageErase(address));
 }
 
 void DRV_SEFC0_EventHandlerSet( const DRV_HANDLE handle, const DRV_MEMORY_EVENT_HANDLER eventHandler, const uintptr_t context )
