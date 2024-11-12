@@ -1,4 +1,4 @@
-<config configName="default" projectName="sst26_read_write_pic32cx_mtsh_sb" configVersion="1.1" device="PIC32CX2051MTSH128" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.0">
+<config configName="default" projectName="sst26_read_write_pic32cx_mtsh_sb" configVersion="1.1" device="PIC32CX2051MTSH128" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -35,7 +35,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -4050,7 +4050,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\definitions.h</file>
-         <hash>a1207fffd7c8c77904b0d1cac4db0cc84bb620e09da0700d4460a4b98e7a80a6</hash>
+         <hash>283a9edcab10618fb921362242c73453d834a0bc26758e313598bbb2b89fdf66</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\device.h</file>
@@ -4086,15 +4086,15 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\driver\sst26\src\drv_sst26_local.h</file>
-         <hash>29c71a6ae051fcf47b8235ad561a592dbdc820cfa2831c0aac0371c39671ad3a</hash>
+         <hash>737fa7267c7b58062a645e38966a08998bc556605beb02de16c81391ee299d69</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\exceptions.c</file>
-         <hash>89852728a9a1cc4c9746839cc3caf5308b8698c0c30bf6bfbad0db9e552a387e</hash>
+         <hash>a565e8d25d218b3e1069267ae9cc317161d062683a27c64e3cb454757bb82fd9</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\initialization.c</file>
-         <hash>5441aeefbfb50568684d3198ae59680d003cd527a42df2b315175e45b6e7ca3e</hash>
+         <hash>f572a2e33180faee67d7f047f7db9d8ab75f3c1bbdb1ab405ac1c7f247947380</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\interrupts.c</file>
@@ -4110,7 +4110,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\osal\osal.h</file>
-         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
+         <hash>1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\osal\osal_definitions.h</file>
@@ -4118,7 +4118,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\osal\osal_impl_basic.h</file>
-         <hash>67ce72d34fd1e4dee0b6937fa026ab2c7bd285f82a24da09742c68333adaf0fc</hash>
+         <hash>7f06b68ec1d6cf3bbd1129bdac599d108557e2c26ca5a58a28a3d59fdf772944</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\clk\plib_clk.c</file>
@@ -4182,27 +4182,31 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc0.c</file>
-         <hash>2666b2b03017cb9382e2f9224af9a1b1158b5a063163946a0ed60ee62701f571</hash>
+         <hash>72c0dae77c97ae7818fb7a799e08cd02a1a15258f6e187ac3bd7ef5903a710df</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc0.h</file>
-         <hash>35517063851978e25640dfaf6512a6af69907bec245ccd05698bf94afee49581</hash>
+         <hash>c8d9d5456cc5955420ca7944b76c87957bef7b4dfe72c2b63f20006869253f69</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc1.c</file>
-         <hash>10160ae893fdc4dbcf4b8f76752e74f6562a5845672a5a45cf940f65e15c46ca</hash>
+         <hash>b89e3b3c2c4fd616eb0d981bc5be3d1460652f8638196d291e54fd2c7eba0dee</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc1.h</file>
-         <hash>83b92e05b738cfeed963f18fe17bd28c298bc3092af00bb0448676aa58e8151c</hash>
+         <hash>dac96d7fb9cf7837a028517adab2500fc02d41593582bf5d442e89453878e800</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc_common.c</file>
+         <hash>7a931f4e896dd6d27b3e22287660b03cdb3048a3fb8f58ada2de43667965446c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\sefc\plib_sefc_common.h</file>
-         <hash>3e24f63c9dcb1ed3c31964d7718ebdd4e4e012f6a8d1a99b59f1cce1d2158137</hash>
+         <hash>693c69e571d2328b2fb1ea87787b8d0d9e1f432819b5756ef4a6eed8cf32b195</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\supc\plib_supc.c</file>
-         <hash>115a598f6de02cad69406f1a5248839afba6394719e3fedb75e62769f187f887</hash>
+         <hash>bc251b42082d3a046d1b05b3c999d71d57768c208ff2f79f9f7c48a22e9ef4db</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_mtsh_sb\peripheral\supc\plib_supc.h</file>
